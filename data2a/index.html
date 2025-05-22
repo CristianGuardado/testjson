@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion del Equipo Expo</title>
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+        <!--   Container limita el ancho del contenido y lo censura-->
+           <main class="container">
+            <h2>Mi equipo Expo</h2>
+            
+            <button type="button" class="contrast" style="width: 100%;">Agregar Integrantes</button>
+
+            <div id="tabla">
+                <!-- Aqui van a ir los datos del JSON tabulados -->
+            </div>
+
+           </main>
+
+           <!-- Overflow auto hace que la pantalla haga scroll hacia un lado-->
+           <table role="grid" class="overflow-auto">
+                <thead> <!-- Encabezado de la tabla-->
+                    <tr>
+                        <ht>nombre</ht>
+                        <ht>rol</ht>
+                        <ht>Carnet</ht>
+                        <ht>Seccion</ht>
+                    </tr>
+               </thead>
+           </table>
+          
+
+
+<!--Archivo con datos JSON-->   
+<script src="JS/data.js"> </script>
+
+<!--Archivo JS-->
+<script src="JS/script.js"></script>
+
+
+
+</body>
+</html>
